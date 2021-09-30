@@ -1,0 +1,22 @@
+span {
+  color: crimson;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-size: 30px;
+}
+.noValido{
+  border-color: red;
+  border-radius: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+/*# sourceMappingURL=estyles.css.map */

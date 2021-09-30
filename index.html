@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!--Links externos-->
+    <link rel="stylesheet" href="css/estyles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="#">
+
+    <title>Formulario</title>
+
+</head>
+<body> 
+<h1>Formulario Responsivo</h1>
+
+
+
+
+
+<form id="form1" name="form1" class="row g-3 needs-validation" method="POST" novalidate>
+
+
+  <h2 class="hidden" id="Exito">Hemos recibido sus datos, pronto nos estaremos comunicando con usted </h2>
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-8">      
+                  <ul>
+                      <li>  
+                          <label>Nombre completo</label>
+                          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="ingrese su nombre"  required> <span id="spanNombre" class="hidden">Debe ingresar un nombre</span>
+          
+                      </li>
+                  </ul>
+                  <ul>
+                      <li>          
+                          <label>RUT</label>
+                          <input type="text" name="rut" id="rut" class="form-control" placeholder="ingrese su rut"  required><span id="spanRut" class="hidden">Debe ingresar un rut</span>
+                      </li>    
+                  </ul>
+                  <ul>
+                      <li>
+                          <div class="form-group">
+                            <label for="Email">Dirección Email</label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Ingrese su Email" required><span id="spanEmail" class="hidden">Debe ingresar un correo valido</span>
+                          </div>  
+                      </li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <label>Teléfono</label>
+                          <input type="tel" name="telefono" id="number" class="form-control" minlength="9" maxlength="9" placeholder="ingrese su numero telefónico" required><span id="spannumber" class="hidden">Debe ingresar un numero valido</span>
+                      </li>    
+                  </ul>
+          
+            <!--PREGUNTAS-->
+
+
+
+
+                  <br>
+                  <h5>Seleccionar uno o más lenguajes de programación de su interés</h5>
+                  <br>
+                  <div  id="checkbox">
+                      <input class="form-check-input" type="checkbox" id="Checkbox1" name="lengprog" value="option1" checked="" >
+                      <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                    
+
+                      <input class="form-check-input" type="checkbox" id="Checkbox2" name="lengprog" value="option2" >
+                      <label class="form-check-label" for="inlineCheckbox2">TypeScript</label>
+                    
+
+                      <input class="form-check-input" type="checkbox" id="checkbox3" name="lengprog" value="option3" >
+                      <label class="form-check-label" for="inlineCheckbox1">C++</label>
+                    
+
+                      <input class="form-check-input" type="checkbox" id="checkbox4" name="lengprog" value="option4" >
+                      <label class="form-check-label" for="inlineCheckbox2">C#</label>
+                   
+
+                      <input class="form-check-input" type="checkbox" id="checkbox5" name="lengprog" value="option5" >
+                      <label class="form-check-label" for="inlineCheckbox1">PHP</label>
+                   
+
+                      <input class="form-check-input" type="checkbox" id="checkbox6" name="lengprog" value="option6" >
+                      <label class="form-check-label" for="inlineCheckbox2">Ruby on Rails</label>
+                    
+                      
+                      <input class="form-check-input" type="checkbox" id="checkbox7" name="lengprog" value="option7" >
+                      <label class="form-check-label" for="inlineCheckbox1">Java</label>
+                    
+
+                      <input class="form-check-input" type="checkbox" id="checkbox8" name="lengprog" value="option8" >
+                      <label class="form-check-label" for="inlineCheckbox2">R</label>
+                    
+
+                      <input class="form-check-input" type="checkbox" id="checkbox9" name="lengprog" value="option9" >
+                      <label class="form-check-label" for="inlineCheckbox1">Groovy</label>
+                    
+                    
+                      <input class="form-check-input" type="checkbox" id="checkbox10" name="lengprog" value="option10" >
+                      <label class="form-check-label" for="inlineCheckbox2">Go</label>
+                    
+                    
+                      <input class="form-check-input" type="checkbox" id="checkbox11" name="lengprog" value="option11" >
+                      <label class="form-check-label" for="inlineCheckbox1">Swift</label>
+                    
+                    
+                      <input class="form-check-input" type="checkbox" id="checkbox12" name="lengprog" value="option12" >
+                      <label class="form-check-label" for="inlineCheckbox2">Kotlin</label>
+                  </div>
+
+                  <br>
+
+                  <h5>¿Cuál es su nivel de experiencia en programación?</h5>
+
+                  <br>
+
+                  <div id="radio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="alto">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Alto
+                      </label>
+                    
+                    
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="medio">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Medio
+                      </label>
+                    
+                    
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="bajo">
+                      <label class="form-check-label" for="exampleRadios3">
+                        Bajo
+                      </label>
+                  </div>
+
+                    <br>
+
+                  <h5>¿Cuál es su nivel de experiencia en programación?</h5>
+
+                  <br>
+
+                    <label for="customRange1" class="form-label">Python</label>
+                    <input type="range" class="form-range" min="0" max="2" id="customRange1">
+                    <label for="customRange2" class="form-label">Java</label>
+                    <input type="range" class="form-range" min="0" max="2" id="customRange2">
+                    <label for="customRange3" class="form-label">C++</label>
+                    <input type="range" class="form-range" min="0" max="2" id="customRange3">
+
+                  <br>
+
+                  <h5>Seleccionar uno o más lenguajes de programación de su interés</h5>
+
+                  <br>
+
+                  <div id="checkbox2">
+
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Estructura de datos</label>
+                    
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">Inteligencia Artificial</label>
+                   
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label class="form-check-label" for="inlineCheckbox1">Interacción Humano-Computador</label>
+                   
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                      <label class="form-check-label" for="inlineCheckbox2">Sistemas Operativos</label>
+
+                  </div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="form-check">
+                        <input type="checkbox" label="checkbox for following text input">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" label="Text input with checkbox">
+                    </div>
+                    <br>
+
+                    <h5>Queremos conocer su opinión acerca de la escuela </h5>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1"></label>
+                      <textarea class="form-control" id="opinionTexto" rows="3" maxlength="500"></textarea>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+
+                        <label class="col-md-4 control-label" for="submit"></label>
+                        <div class="col-md-8">
+
+                          <button id="boton" type="submit" value="subir">enviar</button>
+                        
+                          <button id="limpiaDatos">limpiar</button>
+                        <br>
+                        </div>
+                        <h2 id="exito" class="hidden">DATOS ENVIADOS AL SERVIDOR</h2>        
+                    </div>
+        </div>             
+      </div>
+    </div>
+
+</form>   
+   
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script data-main="js/funciones" src="js/require-jquery.js"></script>
+    <script>var exports = {};</script>
+    <script src="js/funciones.js" async></script>
+
+    <!--FUNCIONES EN JQUERY-->
+
+    <script>
+    $('form').submit(function(e){
+      
+      if ($('input[type=checkbox]:checked').length === 0) {
+          e.preventDefault();
+          alert('Debe seleccionar al menos un valor');
+      }
+      else
+      if ($('input[type=radio]:checked').length === 0){
+          e.preventDefault();
+          alert('Debe seleccionar al menos un valor');    
+      }
+    });
+    </script>
+
+    
+      <!-- <script>
+          $(document).ready(() => {
+            $('#form1').show();
+
+            $('#boton').click(function(){
+              $('#form1').hide();
+              alert('Hemos recibido sus datos, pronto nos estaremos comunicando con usted');
+            });
+          });
+        </script>-->
+
+    
+</body>
+</html>
